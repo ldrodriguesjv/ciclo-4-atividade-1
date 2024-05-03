@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    
+}
+
+header{
+    display: flex;
+}
+
+img{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.div_hero{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: rgb(44, 42, 42);
+    align-items: center;
+
+    padding: 10px;
+}
+
+.div_informacao{
+    width: 0 auto;
+}
+
+.personagem{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(66, 66, 65);
+    width: 460px;
+    height: 0 auto;
+    margin: 2px 2px 2px 2px;
+    border-radius: 4px;
+}
+
+.hero_title{
+    font-family: "Creepster", system-ui;
+    font-size: 60px;
+    font-style: normal;
+    color: #01AAC2;
+    align-items: center;
+    text-align: center;
+    -webkit-text-stroke-width: 1px; /* Largura do contorno */
+    -webkit-text-stroke-color: #2bff00; /* Cor do contorno */
+    
+}
+
+.hero_title span{
+    position: relative;
+}
+
+.hero_title span::before{
+    content: "";
+    color: #01AAC2;
+    -webkit-text-stroke-width: 1px; /* Largura do contorno */
+    -webkit-text-stroke-color: #2bff00; /* Cor do contorno */
+    animation: palavras 6s infinite;
+}
+
+hero_title span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid black;
+    animation: cursor .8s infinite, digita 15s steps(15) infinite;
+    width: calc(100% + 18px);
+    background-color: white;
+}
+
+@keyframes digita {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width:calc(100% + 18px);
+    }
+}
+
+@keyframes cursor {
+    0%{border-left: 2px solid white;
+        
+    }
+}
+
+@keyframes palavras {
+    0%,25%{
+        content: "Personagens da série de desenho";
+    }
+    26%,50%{
+        content: "Rick ";
+    }
+    51%,75%{
+        content: "Rick and ";
+    }
+    76%,100%{
+        content: "Rick and Morty";
+    }
+}
+
+.p_nome{
+    font-family: "Creepster", system-ui;
+    font-size: 17px;
+    align-items: center;
+    width: 260px;
+    /*color:#008394;*/
+    -webkit-text-stroke-width: 0.05px; /* Largura do contorno */
+    -webkit-text-stroke-color: #2bff00; /* Cor do contorno */
+}
+
+.btclass{
+    font-family: "Creepster", system-ui;
+    width: 200px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.div_pesquisa{
+    margin-bottom: 15px;
+}
+.lbtexto{
+    font-family: "Creepster", system-ui;
+    font-size: 16px ;
+    -webkit-text-stroke-width: 0.1px; /* Largura do contorno */
+    -webkit-text-stroke-color: #2bff00; /* Cor do contorno */
+    
+}
+
+.pesquisa{
+    font-family: "Creepster", system-ui;
+    font-size: 16px ;
+    width: 350px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #2bff00;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombreamento */
+}
+
+.btnlocalizar{
+    font-family: "Creepster", system-ui;
+    width: 100px;
+    height: 25px;
+    -webkit-text-stroke-width: 0.1px; /* Largura do contorno */
+    -webkit-text-stroke-color: #2bff00; /* Cor do contorno */
+    margin-left: 10px;
+}

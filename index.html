@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./resource/image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./resource/CSS/style.css">
+    <title>Rick and Morty</title>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1 class="hero_title"> <span></span></h1>
+        </header>
+        <div class="div_pesquisa">
+            <label class="lbtexto">Localizar Personagens</label>
+            <input type="text" class="pesquisa" id="searchInput" placeholder="Digite o nome do personagem" onkeydown="exibirPersonagens()">
+            <button class="btnlocalizar" id="bt_localizar"  onclick="exibirPersonagens()">Localizar</button>
+        </div>
+        <div class="div_hero" id="personagens">
+
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="paginacao" id="paginacao">
+            
+        </div>
+    </footer>
+</body>
+<script src="./resource/JS/fetch.js"></script>
+</html>
